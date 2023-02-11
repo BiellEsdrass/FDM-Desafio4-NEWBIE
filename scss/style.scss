@@ -1,0 +1,154 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//color primary
+$paleBlue: #e0e8ff;
+$brightBlue:#3829e0;
+//color secondary
+$bluePale:#f5f7ff;
+$blueDesaturated:#7280a7;
+$blueDark:#1f2f56;
+
+body{
+    height: 100vh;
+    background-image: url(/images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.section{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+
+    height: auto;
+    width: 400px;
+    border-radius: 25px;
+    background-color: aliceblue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+    #imgPeople{
+        width: 100%;
+        height: 15rem;
+        border-radius: 25px 25px 0px 0px;
+    }
+
+    h1{
+        margin: 1rem;
+        margin-top: 2rem;
+        font-weight: 900;
+        color: #1f2f56;
+    }
+
+    p{
+        margin-left: 3rem;
+        margin-right: 3rem;
+
+        font-size: 15px;
+        color: #57617cab;
+    }
+
+    .plan{
+        display: flex;
+        align-items: center;
+        width: 100%;    
+        justify-content: space-evenly;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        text-align: center;
+        gap: 2rem;
+
+
+
+        .plan__all{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-align: center;
+        }
+
+        .plan__letter{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1px;
+
+            #annual{
+                color: #1f2f56;
+                font-weight: 900;
+                font-size: 16px;
+            }
+
+            #pay{
+                color: #7280a7;
+                font-size: 15px;
+            }
+        }
+
+        #change{
+            color: #2e0ffa;
+            transition: all .5s;
+
+            &:hover{
+                color: #2e0ffaa4;
+                text-decoration: none;
+            }
+        }
+    }
+
+    .payment{
+        width: 80%;
+        height: 3rem;
+        border-radius: 10px;
+        background-color: #320ffa;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 2rem;
+
+        font-weight:900;
+        letter-spacing: 1px;
+        color: white;
+
+        box-shadow: 2px 1px 15px 3px #320ffa61;
+        transition: all .5s;
+
+        &:hover{
+            background-color: #4726ffe4;
+        }
+    }
+
+    .cancel{
+        margin-bottom: 2rem;
+        text-decoration: none;
+        font-weight: 500;
+        color: #7280a7;
+        transition: all .5s;
+
+        &:hover{
+            color: #2c2f36;
+        }
+    }
+
+}
+
+
+.attribution{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    a{
+        color: #2e0ffa;
+    }
+}
